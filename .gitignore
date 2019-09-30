@@ -1,0 +1,9 @@
+/Include
+/Lib
+/Scripts
+/__pycache__
+pyvenv.cfg
+save*/
+test*.py
+*.bat
+*.BAT
