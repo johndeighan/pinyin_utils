@@ -3,6 +3,7 @@
 /Scripts
 /__pycache__
 /dist
+*.egg-info/
 pyvenv.cfg
 save*/
 test*.py
