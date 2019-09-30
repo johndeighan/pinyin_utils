@@ -1,8 +1,5 @@
 # setup.py
 
-# Meant to be executed one directory level up from this folder
-#    i.e. as:   pinyin_utils/setup.py
-
 import sys, pathlib
 from setuptools import setup, find_packages
 
@@ -14,7 +11,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
 	name = "pinyin_utils",
-	version = "0.1.0",
+	version = "0.1.1",
 	author = "John Deighan",
 	author_email = "john.deighan@gmail.com",
 	description = "Utilities for handling Chinese pinyin",
@@ -23,6 +20,7 @@ setup(
 	license="MIT",
 
 	url = "https://github.com/johndeighan/pinyin_utils",
+	py_modules = ['pinyin_utils'],
 	packages = find_packages(),
 	include_package_data = False,  # include only *.py files
 	classifiers = [
