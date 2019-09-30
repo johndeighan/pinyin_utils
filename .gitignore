@@ -2,6 +2,7 @@
 /Lib
 /Scripts
 /__pycache__
+/dist
 pyvenv.cfg
 save*/
 test*.py
