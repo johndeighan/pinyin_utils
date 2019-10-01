@@ -11,7 +11,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
 	name = "pinyin_utils",
-	version = "0.1.1",
+	version = "0.1.3",
 	author = "John Deighan",
 	author_email = "john.deighan@gmail.com",
 	description = "Utilities for handling Chinese pinyin",
@@ -20,9 +20,9 @@ setup(
 	license="MIT",
 
 	url = "https://github.com/johndeighan/pinyin_utils",
-	py_modules = ['pinyin_utils'],
 	packages = find_packages(),
-	include_package_data = False,  # include only *.py files
+	py_modules = ['pinyin_utils'],
+	# include_package_data = False,  # include only *.py files
 	classifiers = [
 		"Programming Language :: Python :: 3",
 		"License :: OSI Approved :: MIT License",
@@ -31,6 +31,5 @@ setup(
 
 	# --- All 3rd party packages required:
 	install_requires = [],
-
 	python_requires = '>=3.6',
 	)
