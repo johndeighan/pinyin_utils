@@ -2,6 +2,7 @@
 /Lib
 /Scripts
 /__pycache__
+/build
 /dist
 *.egg-info/
 pyvenv.cfg
