@@ -17,6 +17,8 @@ To get the library into a project:
 
 # SYNOPSIS of pinyin_utils.py
 
+coming soon
+
 # SYNOPSIS of translate.py
 
 ```python
@@ -26,8 +28,14 @@ from translate import translate, initDB, setApiKey
 
 async def main():
 	asks.init('trio')
+
+	# --- The database need not exist.
+	#     Furthermore, if you leave out this call,
+	#     the database will be put at ./Translations.db by default
 	initDB('./Translations.db')  # need not exist
-	setApiKey(os.environ['GOOGLE_APIKEY']
+
+	# --- This env var key is the default if you leave this out
+	setApiKey(os.environ['GOOGLE_APIKEY'])
 
 	hWords = {
 		'cat': None,
