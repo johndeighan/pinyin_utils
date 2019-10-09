@@ -11,7 +11,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
 	name = "pinyin_utils",
-	version = "0.2.1",
+	version = "0.2.2",
 	author = "John Deighan",
 	author_email = "john.deighan@gmail.com",
 	description = "Utilities for handling Chinese pinyin",
