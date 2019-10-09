@@ -22,17 +22,16 @@ coming soon
 # SYNOPSIS of translate.py
 
 ```python
-import os, time, trio, pprint
+import os, time, trio, asks, pprint
 
 from translate import translate, initDB, setApiKey
 
 async def main():
-	asks.init('trio')
 
 	# --- The database need not exist.
 	#     Furthermore, if you leave out this call,
 	#     the database will be put at ./Translations.db by default
-	initDB('./Translations.db')  # need not exist
+	initDB('./Translations.db')
 
 	# --- This env var key is the default if you leave this out
 	setApiKey(os.environ['GOOGLE_APIKEY'])
@@ -50,3 +49,5 @@ async def main():
 
 	pprint.PrettyPrinter(indent=3).pprint(hWords)
 
+asks.init('trio')
+trio.run(main)
