@@ -10,7 +10,7 @@ README = (HERE / "README.md").read_text()
 # --- Get the version number
 reVersion = re.compile(r'^__version__\s*=\s*\"(.*)\"')
 version = ''
-with open('./pinyin_utils.py') as fh:
+with open('./pinyin_utils.py', encoding='utf8') as fh:
 	for line in fh:
 		result = reVersion.match(line)
 		if result:
