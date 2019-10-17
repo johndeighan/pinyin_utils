@@ -51,3 +51,16 @@ async def main():
 
 asks.init('trio')
 trio.run(main)
+
+# SYNOPSIS of tabdb.py
+
+	coming soon
+
+# SYNOPSIS of englishWords.py
+
+	coming soon
+
+# SYNOPSIS of ChineseDB.py
+
+	coming soon
+
