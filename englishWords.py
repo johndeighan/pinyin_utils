@@ -2,6 +2,8 @@
 
 import re
 
+from pinyin_utils import getVersion
+
 reNonAscii = re.compile(r'[^\x00-\x7F]')
 reOr = re.compile(r'^(\S+)\s+or\s+(\S+)')
 reReject = re.compile(r'''
@@ -19,6 +21,7 @@ reReject = re.compile(r'''
 hAbbrev = None
 hFix = None
 setSkip = None
+__VERSION__ = getVersion()
 
 # ---------------------------------------------------------------------------
 

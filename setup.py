@@ -29,7 +29,7 @@ setup(
 
 	url = "https://github.com/johndeighan/pinyin_utils",
 	packages = find_packages(),
-	py_modules = ['pinyin_utils','translate'],
+	py_modules = ['pinyin_utils','translate','tabdb','englisWords','ChineseDB'],
 	classifiers = [
 		"Programming Language :: Python :: 3",
 		"License :: OSI Approved :: MIT License",
