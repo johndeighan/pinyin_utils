@@ -5,8 +5,12 @@ from urllib.parse import urlencode
 from urllib.request import urlopen
 from urllib.error import HTTPError, URLError
 
+from pinyin_utils import getVersion
+
 db = None   # keep a cache of previous translations
 APIKEY = os.environ['GOOGLE_APIKEY']
+
+__VERSION__ = getVersion()
 
 # ---------------------------------------------------------------------------
 
